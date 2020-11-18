@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+	<script src="/javascript/signuptrial.js"></script>
+	<style>
+		a.one:link, a:visited {
+	  color: white;
+	  text-align: center;
+	  text-decoration:none;
+	  display: inline-block;
+	}
+	  </style>
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/checkbox.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div class="header">
+  <a href="Index.html" <span class="logo">Ruto</span><span class="hr4">.</span></a>
+  <div class="header-right">
+	  <div class="links">
+    <a  href="Login.html">Log In</a>
+	<a href="Signup.html">Sign Up</a>
+</div>
+  </div>
+</div>
+	<div class="bg-contact3">
+		<div class="container-contact3">
+			<div class="wrap-contact3">
+				<h2  color="#fd6a02" style = "font-size:36px;font-style:bold;"><font color="fd6a02">Login To Your Account</font></h2><br/>
+					<div class="wrap-input3 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input3"  type="email" id="email" placeholder="Email"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+						<span class="focus-input3"></span>
+					</div>
+					<div class="wrap-input3 validate-input" data-validate = "Password is required">
+						<input class="input3" type="password" id="password" placeholder="Password">
+						<span class="focus-input3"></span>
+					</div>
+						<div class="container-contact3-form-btn">
+						<button onclick="LogIn()" class="contact3-form-btn" type ="submit" id="LogIn">
+							<a href = "pref.html" class="btn1" style='text-decoration:none;'>Login</a>
+						</button>
+					</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+	<script src="js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-23581568-13');
+</script>
+</body>
+</html>

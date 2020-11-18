@@ -1,0 +1,425 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  }
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ HEADER ]*/
+  
+  * {box-sizing: border-box;}
+  
+  body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  .header-right .links {
+      margin-right: 25px;
+      font-size: 16px;
+      font-weight: 600;
+      color: black;
+  }
+  
+  .header {
+    position: fixed;
+      z-index: 1000;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 25px 0 25px;
+      background-color: white;
+      box-shadow: 0 19px 38px rgba(0,0,0,0.10);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      
+  }
+  
+  .header a {
+    float: left;
+    color:black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 15px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+
+  }
+  .hr4{
+      color: #fd6a02;
+  }
+  .brmedium { 
+    display: block; 
+    margin-bottom: -3.5em; 
+} 
+  
+  /*header a:hover {
+    background-color:#575757;
+    color: black;
+  }*/
+  
+  .header a.active {
+    background-color: #575757;
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+    border-radius: 45px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      border-radius: 45px;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+      border-radius: 45px;
+    }
+  }
+  
+  
+  
+  
+  * {
+      margin: 0px; 
+      padding: 0px; 
+      box-sizing: border-box;
+  }
+  
+  body, html {
+      height: 100%;
+      font-family: Poppins-Regular, sans-serif;
+  }
+  
+  /*---------------------------------------------*/
+  a {
+      font-family: Poppins-Regular;
+      font-size: 14px;
+      line-height: 1.7;
+      color:gray;
+      margin: 0px;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+  }
+  
+  a:focus {
+      outline: none !important;
+  }
+  
+  a:hover {
+      text-decoration: none;
+      color:#fd6a02;
+  }
+  a:hover.logo{
+      color: black;
+  }
+  
+  /*---------------------------------------------*/
+  h1,h2,h3,h4,h5,h6 {
+      margin: 0px;
+  }
+
+/* Landing CSS */
+
+.landing
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw 0 10vw;
+    height: 100vh;
+}
+
+.landingText h1
+{
+    font-size: 7vw;
+    /* font-weight: bolder; */
+    margin: 0 !important;
+}
+
+.landingText h3
+{
+    margin: 6px !important;
+    font-size: 1.8vw;
+    color: #fd6a02;
+}
+
+.landingText .btn
+{
+    width: 150px;
+    margin-top: 30px;
+    padding: 12px 28px;
+    background-color: #fd6a02;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.landingText .btn a
+{
+    font-size: 1.2vw;
+    color: white;
+}
+
+.landingImage img
+{
+    width: 32vw;
+}
+
+/* About Us CSS */
+
+.about
+{
+    height: 600px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aboutText
+{
+    position: relative;
+    padding: 0 50px;
+    align-items: center;
+    height: inherit;
+}
+
+.aboutText h1
+{
+    font-size: 48px;
+    position: relative;
+    left: 300px;
+}
+
+.aboutText img
+{
+    width: 25vw;
+    position: absolute;
+    top: 175px;
+    left: -10px;
+}
+
+.aboutList
+{
+    width: 50%;
+}
+
+ol
+{
+    list-style: none;
+    color: #fd6a02;
+}
+
+ol li
+{
+    font-size: 34px;
+    position: relative;
+}
+
+li p
+{
+    font-size: 26px;
+    color: black;
+    padding-left: 60px;
+    line-height: 60px;
+    opacity: 0.6;
+}
+
+li span
+{
+    position: absolute;
+    line-height: 57px;
+    font-weight: 600;
+}
+
+/* Info CSS */
+
+.infoSection
+{
+    height: 600px;
+}
+
+.infoHeader
+{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.infoCards
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0 40px 0;
+}
+
+.infoCards .card
+{
+    position: relative;
+    height: 360px;
+    width: 350px;
+    background: white;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.03), 0 10px 10px rgba(0,0,0,0.03);
+}
+
+.infoCards .one .cardoneImg
+{
+    width: 180px;
+    position: absolute;
+    top: -45px;
+    right: -43px;
+}
+
+.infoCards .two .cardtwoImg
+{
+    width: 180px;
+    position: absolute;
+    top: -45px;
+    right: -45px;
+}
+
+.infoCards .three .cardthreeImg
+{
+    width: 180px;
+    position: absolute;
+    top: -45px;
+    right: -44px;
+}
+
+.cardbgone
+{
+    height: 150px;
+    background-color: #fd6a02;
+}
+
+.cardbgtwo
+{
+    height: 150px;
+    background-color: #fd6a02;
+}
+
+.cardbgthree
+{
+    height: 150px;
+    background-color: #fd6a02;
+}
+
+.cardContent
+{
+    padding: 0 20px;
+}
+
+.cardContent h2
+{
+    font-weight: 600;
+    padding-top:12px ;
+}
+
+.cardContent p
+{
+    line-height: 30px;
+    opacity: 0.6;
+}
+
+.cardContent .cardBtn
+{
+    position: absolute;
+    right: 20px;
+    padding: 10px;
+    background-color: #575757;
+    width: 25px;
+    height: 20px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.1s;
+}
+
+.cardContent .cardBtn:hover
+{
+    background-color: #fd6a02;
+}
+
+.cardContent .cardBtn .cardIcon
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 16px;
+}
+
+/*Banner*/
+
+.banner
+{
+    height: 400px;
+    background-color: #fd6a02;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bannerText h1
+{
+    font-size: 3vw;
+    color: white;
+    font-weight: 600;
+}
+
+.bannerText img
+{
+    width: 10vw;
+    margin-right: 20px;
+}
+
+.bannerImg img
+{
+    width: 20vw;
+}
+
+/*footer*/
+
+.footer
+{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+

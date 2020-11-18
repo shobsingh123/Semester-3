@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MAPS</title>
+  <link rel="stylesheet" href="css/pref.css">
+  <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+  <script src="javascript/pref.js"></script>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+</head>
+<body>
+  <div class="header">
+    <a href="Index.html" <span class="logo">Ruto</span><span class="hr4">.</span></a>
+    <div class="header-right">
+            <input type="text" class="no-outline" id="input" placeholder="Preferences">
+          <button class="links" onclick="initMap()"><a href=#>Search</a></button>
+          <button class="links" onclick="getRoute()"><a href="route.html">Route</a></button>
+    </div>
+  </div>
+  <div id="panel"></div>
+  <div id="map"></div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm6s9p3cGIVx5SJEm0mhEjmlyr00Ssn_k&libraries=places&callback=initMap">
+  </script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+/* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+     @font-face {
+      font-family: Poppins-Regular;
+      src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+    }
+    
+    @font-face {
+      font-family: Poppins-Medium;
+      src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+    }
+    
+    @font-face {
+      font-family: Poppins-Bold;
+      src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+    }    
+     html, body
+{
+    background-color: #fff;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    font-family: 'Poppins-Bold';
+    overflow-x: hidden !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-right{
+  display: flex;
+  align-items: center;
+}
+.header-right .links {
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.header {
+  position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    background-color: white;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.10);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.header a {
+  float: left;
+  color:white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 15px; 
+  line-height: 15px;
+  border-radius: 12px;
+}
+
+.header a.logo {
+  color:black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/*header a:hover {
+  background-color:#575757;
+  color: black;
+}*/
+
+
+
+
+
+
+* {
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Poppins-Regular, sans-serif;
+}
+
+/*---------------------------------------------*/
+
+    
+     #map {
+        height: 100%;
+        background-color: grey;
+      }
+  
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #panel {
+        height:550px;
+        margin: 120px 30px;
+        border-radius: 30px;
+        width: null;
+        background-color: white;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.10);
+        position: fixed;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: all .2s ease-out;
+      }
+      .hr4{
+        color: #fd6a02;
+    }
+    
+      .open {
+        width: 250px;
+      }
+  
+      /* Styling for place details */
+      .hero {
+        width: 100%;
+        height: auto;
+        max-height: 220px;
+        display: block;
+      }
+  
+      .place,
+      p {
+        /*font-family: 'open sans', arial, sans-serif;*/
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+  
+      .details {
+        color: black;
+      }
+      a:hover.logo{
+        color: black;
+    }
+      
+  
+      .addButton {
+  background-color: #fd6a02;
+  border: none;
+  color:white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 20px 15px;
+  cursor: pointer;
+  border-radius: 12px;
+      }
+      
+      
+      input.no-outline{
+        outline: none;
+        font-size: 15px;
+        margin-right:25px ;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        background-color: white;
+      }
+       .links{
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 2px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 5px;
+        margin: 2px 1px;
+        cursor: pointer;
+        border-radius: 12px;
+      }
+  
